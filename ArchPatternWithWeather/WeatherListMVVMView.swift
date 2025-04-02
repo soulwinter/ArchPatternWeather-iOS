@@ -1,7 +1,19 @@
 import SwiftUI
-import WeatherKit
-import CoreLocation
 
+// MVVM Pattern: View
+struct WeatherListMVVMView: View {
+  
+  @State var viewModel: WeatherListViewModel
+  
+  var body: some View {
+    WeatherListRenderingView(viewState: viewModel.viewState)
+      .task {
+        await viewModel.fetch()
+      }
+  }
+}
+
+// MVVM Pattern: View Model
 @Observable
 class WeatherListViewModel {
   
@@ -19,18 +31,6 @@ class WeatherListViewModel {
     } catch {
       viewState = .failure(error)
     }
-  }
-}
-
-struct WeatherListMVVMView: View {
-  
-  @State var viewModel: WeatherListViewModel
-  
-  var body: some View {
-    WeatherListRenderingView(viewState: viewModel.viewState)
-      .task {
-        await viewModel.fetch()
-      }
   }
 }
 
