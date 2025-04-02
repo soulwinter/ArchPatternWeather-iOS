@@ -5,7 +5,7 @@ import CoreLocation
 struct WeatherListView: View {
   
   @Environment(WeatherServiceWrapper.self) var weatherService
-  @State private var viewState: WeatherListRenderingView.ViewState = .loading
+  @State private var viewState: WeatherListViewState = .loading
   
   var body: some View {
     WeatherListRenderingView(viewState: viewState)
@@ -20,15 +20,15 @@ struct WeatherListView: View {
   }
 }
 
+enum WeatherListViewState {
+  case loading
+  case success([WeatherItem])
+  case failure(Error)
+}
+
 struct WeatherListRenderingView: View {
   
-  let viewState: ViewState
-  
-  enum ViewState {
-    case loading
-    case success([WeatherItem])
-    case failure(Error)
-  }
+  let viewState: WeatherListViewState
   
   var body: some View {
     ZStack {
