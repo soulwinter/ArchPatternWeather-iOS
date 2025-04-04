@@ -1,6 +1,6 @@
 import Foundation
 
-struct WeatherItem: Identifiable {
+struct WeatherItem: Hashable, Identifiable {
   let id: UUID
   let cityName: String
   let symbolName: String
