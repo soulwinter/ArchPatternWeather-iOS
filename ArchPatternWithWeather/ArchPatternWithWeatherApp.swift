@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct ArchPatternWithWeatherApp: App {
+  
+  let weatherService = WeatherServiceWrapper()
+  
   var body: some Scene {
     WindowGroup {
       WeatherListView()
+        .environment(weatherService)
     }
   }
 }
