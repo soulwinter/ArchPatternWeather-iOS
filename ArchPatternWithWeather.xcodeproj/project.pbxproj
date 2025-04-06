@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B45A10C02DA23145005C61FD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B45A10BF2DA23140005C61FD /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1967B3F32DA0431100BA2E42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -19,6 +23,7 @@
 /* Begin PBXFileReference section */
 		1967B22F2D9C62BD00BA2E42 /* ArchPatternWithWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchPatternWithWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1967B3EF2DA0431100BA2E42 /* ArchPatternWithWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchPatternWithWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45A10BF2DA23140005C61FD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +60,7 @@
 		1967B2262D9C62BD00BA2E42 = {
 			isa = PBXGroup;
 			children = (
+				B45A10BF2DA23140005C61FD /* README.md */,
 				1967B2312D9C62BD00BA2E42 /* ArchPatternWithWeather */,
 				1967B3F02DA0431100BA2E42 /* ArchPatternWithWeatherTests */,
 				1967B2302D9C62BD00BA2E42 /* Products */,
@@ -126,7 +132,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1630;
 				TargetAttributes = {
 					1967B22E2D9C62BD00BA2E42 = {
 						CreatedOnToolsVersion = 16.2;
@@ -162,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45A10C02DA23145005C61FD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArchPatternWithWeather/Preview Content\"";
-				DEVELOPMENT_TEAM = D45XUJ5XY2;
+				DEVELOPMENT_TEAM = YR2LEP366G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -358,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ArchPatternWithWeather/Preview Content\"";
-				DEVELOPMENT_TEAM = D45XUJ5XY2;
+				DEVELOPMENT_TEAM = YR2LEP366G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
